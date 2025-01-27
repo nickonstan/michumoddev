@@ -1,0 +1,15 @@
+# Jekyll build and cache folders
+_site
+.markdown.backup
+.backup
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# System and editor-specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
