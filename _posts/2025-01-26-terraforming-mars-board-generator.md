@@ -2,6 +2,7 @@
 layout: post
 title: "Terraforming Mars Board Generator"
 date:   2025-01-26 13:10:00 -0300
+categories: ["Terraforming Mars"] 
 ---
 
 I believe that a new board, with all the variety it introduces, breathes new life into Terraforming Mars. That's why *Hellas & Elysium* is one of my favorite expansions to the original board game and why I was super excited about *Utopia & Cimmeria* and *Amazonis & Vastitas* when they were announced. I thought it would be cool to be able to enjoy these boards on the digital version of the game since I'm spending disproportionately more hours playing *TM* online, saving the longer, 4-player offline sessions for every other weekend. Even though there is an official DLC for *Hellas & Elysium*, it's unlikely that we'll be seeing Utopia, Cimmeria, Amazonis, and Vastitas any time soon. So I set out on a journey to create my own mod to make it possible, learning a whole lot in the process.
