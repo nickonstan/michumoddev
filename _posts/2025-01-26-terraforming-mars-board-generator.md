@@ -62,7 +62,7 @@ You can tell the randomizer that you don't want a resource included on the board
 1. The proportion of tiles with **0** (50%), **1** (30%), **2** (17%), or **3** (3%) resources.
 2. The probability of appearance of each bonus (some, such as *Plants*, are more common than others).
 
-I chose the weights after studying the the bonus distribution of the official boards. The idea is for the randomizer to churn out a semi-balanced board to act as a starting point for further manual editing. There is no way to change the weights from the UI at this moment, but I may introduce one in the future.
+I chose the weights after studying the bonus distribution of the official boards. The idea is for the randomizer to churn out a semi-balanced board to act as a starting point for further manual editing. There is no way to change the weights from the UI at this moment, but I may introduce one in the future.
 
 ### More ideas
 - There are still some expansion-dependent bonuses to add, such as the *Colony* (*Colonies*) and the *Delegate* (*Turmoil*). Implementing the mechanics of the expansions needed for these bonuses to make sense would be an immensely difficult undertaking, so I'm going to skip them for now.
