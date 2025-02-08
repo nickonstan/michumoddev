@@ -5,7 +5,7 @@ date: 2025-02-08 18:15 -03:00
 categories: ["Terraforming Mars"]
 ---
 
-This is a continuation of: [Part 2]({% post_url 2025-02-08-programming-custom-milestones-part-2 %}).
+This is a continuation of [Part 2]({% post_url 2025-02-08-programming-custom-milestones-part-2 %}).
 
 Getting the custom *Milestones* and *Awards* to work in the game was the tricky part, now comes some fun. I designed custom icons for *Utopia* and *Cimmeria* referencing the artistic style of the icons that are already in the game. After some hours of tracing and getting ideas down in *CorelDRAW*, I came up with these:
 ![Utopia & Cimmeria Milestone Icons](/assets/images/michumod_milestone_icons_utopia_cimmeria.jpg)
