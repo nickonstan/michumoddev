@@ -40,16 +40,12 @@ case "Trader":
     __result = uniqueResources.Count;
     return;
 ```
-#### Planetologist
+#### Metallurgist
 
 ```csharp
-case "Planetologist":
-    int earthTags = playerBoardData.TagBank.GetTagQuantity(ETagType.Earth, false);
-    int venusTags = playerBoardData.TagBank.GetTagQuantity(ETagType.Venus, false);
-    int jovianTags = playerBoardData.TagBank.GetTagQuantity(ETagType.Jovian, false);
-    int wildTags = playerBoardData.TagBank.GetTagQuantity(ETagType.Wild, false);
-
-    __result = Mathf.Min(earthTags, venusTags, jovianTags, wildTags);
+case "Metallurgist":
+    __result = playerBoardData.ResourceBank[EResourceType.Steel].ProductionQuantity +
+               playerBoardData.ResourceBank[EResourceType.Titanium].ProductionQuantity;
     return;
 ```
 
