@@ -32,6 +32,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+minima:
+  social_links:
+    - title: Email
+      icon: email
+      url: "mailto:michumoddev@proton.me"
+    - title: Youtube
+      icon: youtube
+      url: "https://www.youtube.com/@michumod"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
