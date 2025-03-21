@@ -52,7 +52,8 @@ The depth of the tiles on the outer ring still needs some adjustment but, visual
 Even though the board is playable, there are still a lot of features that I need to implement to make it true to the original:
 1. Update the *Global Parameter* requirements to finish the game (more *oceans*, extended *oxygen* and *temperature* meters).
 2. Add the new bonuses: *Plant* production on the *temperature* track, *Card* on the *oxygen* track.
-3. Come up and implement a replacement for the *Lobbyist* *Milestone* (that requires the *Turmoil* expansion).
+3. Write code for the *wild/standard resource* bonuses that appear on the official board.
+4. Come up with and implement a replacement for the *Lobbyist* *Milestone* (that requires the *Turmoil* expansion).
 
 ## You thought it was over?
 In the next post I will touch on **vertex colors** and explain how the game handles *visual effects* when placing tiles, and more specifically when placing *oceans* and *greeneries*. There is a direct connection between these visual effects and **the underlying Mars mesh/3D model** that makes creating smaller of bigger boards a much greater challenge.
