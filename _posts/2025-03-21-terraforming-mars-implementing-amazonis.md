@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Implementing Amazonis: Part 1"
+title: "MichuMod: Implementing Amazonis | Part 1"
 date: 2025-03-21 17:20 -03:00
 categories: ["Terraforming Mars"]
 ---
