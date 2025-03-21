@@ -56,4 +56,4 @@ Even though the board is playable, there are still a lot of features that I need
 4. Come up with and implement a replacement for the *Lobbyist* *Milestone* (that requires the *Turmoil* expansion).
 
 ## You thought it was over?
-In the next post I will touch on **vertex colors** and explain how the game handles *visual effects* when placing tiles, and more specifically when placing *oceans* and *greeneries*. There is a direct connection between these visual effects and **the underlying Mars mesh/3D model** that makes creating smaller of bigger boards a much greater challenge.
+In the next post I will touch on **vertex colors** and explain how the game handles *visual effects* when placing tiles, and more specifically when placing *oceans* and *greeneries*. There is a direct connection between these visual effects and **the underlying Mars mesh/3D model** that makes creating smaller of bigger boards a much greater challenge than anticipated initially.
