@@ -8,7 +8,7 @@ categories: ["Terraforming Mars"]
 ## Planet mesh
 After creating the necessary *GameObjects* for all 91 tiles of the *Amazonis* board (as explained in [Part 1](https://michumod.dev/terraforming%20mars/2025/03/21/terraforming-mars-implementing-amazonis)), I noticed there was still an issue.
 
-The underlying planet mesh is designed **to work only with *size-9* boards (61 tiles)**. There is a *vertex* at the center of each tile, the color of which is changed every time an ocean or greenery is placed on the board. The change of *vertex color* is what signals the *shader* to "paint this area with the ocean/greenery material" or, more accurately, "reveal the (already existing) ocean/greenery material below this tile". When a player clicks within a tile slot to place a tile, part of the code **searches for the closest vertex on the mesh** and changes its color. So when using the same mesh with a 91-tile board, ocean and greenery placement would be offset slighly at best or totally wrong at worst. This is because **there weren't enough vertices** to support the new tiles.
+The underlying planet mesh is designed **to work only with *size-9* boards (61 tiles)**. There is a *vertex* at the center of each tile, the color of which is changed every time an ocean or greenery is placed on the board. The change of *vertex color* is what signals the *shader* to "paint this area with the ocean/greenery material" or, more accurately, "reveal the (already existing) ocean/greenery material below this tile". When a player clicks within a tile slot to place a tile, part of the code **searches for the closest vertex on the mesh** and changes its color. So when using the same mesh with a 91-tile board, ocean and greenery placement would be offset slighly at best or be totally wrong at worst. This is because **there weren't enough vertices** to support the new tiles.
 
 This is easier to explain visually:
 ![Mesh Vertex Grid](/assets/images/planet-mesh-vertices.jpg)
@@ -37,7 +37,7 @@ Then I connected the generated mesh to a hemispheric model, referencing the orig
 *Complete custom mesh for Amazonis*
 
 ## Loading the custom mesh into the game
-After a bit of research, I found that an efficient way to load meshes programmatically when using *Unity* is by using *AssetBundles*. So I fired the Unity editor up, imported the custom mesh (as *.FBX* format) and built an *AssetBundle* containing only the mesh data. As long as I did everything correctly when it comes to sizing and *UVs*, the game should not have any problem applying the original material on the custom mesh.
+After a bit of research, I found that an efficient way to load meshes programmatically when using *Unity* is by using *AssetBundles*. So I fired the Unity editor up, imported the custom mesh (*.FBX* format) and built an *AssetBundle* containing only the mesh data. As long as I had done everything correctly when it comes to sizing and *UVs*, the game should not have any problem applying the original material on the custom mesh.
 
 The code was straighforward for this one: I wrote a helper function to load the *AssetBundle* using `AssetBundle.LoadFromFile`, get the *Mesh* from it using `.LoadAsset<Mesh>()`, and return the custom mesh object.
 
