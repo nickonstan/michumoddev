@@ -41,7 +41,7 @@ After a bit of research, I found that an efficient way to load meshes programmat
 
 The code was straighforward for this one: I wrote a helper function to load the *AssetBundle* using `AssetBundle.LoadFromFile`, get the *Mesh* from it using `.LoadAsset<Mesh>()`, and return the custom mesh object.
 
-Then, I replaced the original mesh **only when Amazonis is chosen as the board** by using a `[HarmonyPatch]`:
+Then, I wrote a `[HarmonyPatch]` to replace the original mesh **only when Amazonis is chosen as the board**:
 ```csharp
 public static bool Prefix(VisualTileController __instance)
 {
