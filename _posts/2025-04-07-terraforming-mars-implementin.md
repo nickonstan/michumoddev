@@ -5,7 +5,7 @@ date: 2025-04-07 13:20 -03:00
 categories: ["Terraforming Mars"]
 ---
 
-## Planet Mesh
+## Planet mesh
 After creating the necessary *GameObjects* for all 91 tiles of the *Amazonis* board (as explained in [Part 1](https://michumod.dev/terraforming%20mars/2025/03/21/terraforming-mars-implementing-amazonis)), I noticed there was still an issue.
 
 The underlying planet mesh is designed **to work only with *size-9* boards (61 tiles)**. There is a *vertex* at the center of each tile, the color of which is changed every time an ocean or greenery is placed on the board. The change of *vertex color* is what signals the *shader* to "paint this area with the ocean/greenery material" or, more accurately, "reveal the (already existing) ocean/greenery material below this tile". When a player clicks within a tile slot to place a tile, part of the code **searches for the closest vertex on the mesh** and changes its color. So when using the same mesh with a 91-tile board, ocean and greenery placement would be offset slighly at best or totally wrong at worst. This is because **there weren't enough vertices** to support the new tiles.
