@@ -24,14 +24,19 @@ description: >- # this means to ignore newlines until "baseurl:"
   A journal on programming, gamedev, and modding, by a curious person.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michumod.dev" # the base hostname & protocol for your site, e.g. http://example.com
-header_pages:
-  - categories/terraforming-mars.html
-  - about.markdown
+menu:
+  - title: Terraforming Mars
+    url: /categories/terraforming-mars/
+  - title: About
+    url: /about/
+
+permalink: /:year/:month/:day/:title/
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,3 +60,16 @@ plugins:
 
 youtube_username: "@michumod"
 rss: rss
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tags/:name/'
+    category: '/categories/:name/'
+  slug-mode: default
