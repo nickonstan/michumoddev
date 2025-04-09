@@ -32,6 +32,9 @@ After a bit of work in *Grasshopper* (a visual programming tool for *Rhino3D*), 
 ![Grasshopper planet mesh definition](/assets/images/gh-custom-mesh-definition.png)
 *Grasshopper planet mesh definition*
 
+![Grasshopper definition in action](/assets/images/gh-custom-mesh-in-action.gif)
+*Grasshopper definition in action*
+
 Using it I generated a mesh that supports a 91-tile board (notice how each vertex falls at the center of each tile):
 ![Grasshopper planet mesh definition](/assets/images/gh-custom-mesh-result.jpg)
 *Generated mesh for a 91-tile board*
